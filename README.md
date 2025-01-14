@@ -19,3 +19,8 @@ npm run build
 ```
 npm run lint
 ````
+
+Best practice
+```
+npm install vuetify@v2-stable
+```
