@@ -77,7 +77,7 @@ export default {
   methods: {
     login() {
       const { username } = this;
-      this.$router.replace({ name: "dashboard", params: { username: username } });
+      this.$router.replace({ name: "Bucket List", params: { username: username } });
     },
     register() {
        if(this.password == this.confirmPassword){
