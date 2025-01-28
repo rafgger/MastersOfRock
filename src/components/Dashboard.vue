@@ -1,9 +1,15 @@
 <template>
+  
 <v-app>
     <v-toolbar color="primary" dark fixed app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>International Rock Masters</v-toolbar-title>
       </v-toolbar>
- <v-navigation-drawer permanent>
+ <v-navigation-drawer 
+
+  v-model="drawer"
+  >
+  
         <v-list>
           <v-list-item class="px-2">
             <v-list-item-avatar size="72">
@@ -42,6 +48,8 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    
+    
 </v-app>
 </template>
 
@@ -49,12 +57,13 @@
   export default {
     data () {
       return {
+        drawer: null,
         items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard' },
           { title: 'Photos', icon: 'mdi-image' },
           { title: 'About', icon: 'mdi-help-box' },
         ],
-        username:this.$route.params.username
+        username: this.$route.params.username,
       }
     },
     methods: {
