@@ -16,7 +16,7 @@
           <img
             src="https://myhotposters.com/cdn/shop/products/mQ0284_large.jpeg?v=1571444134"
             alt="masterOfRock"
-          >
+          > 
         </v-avatar>
         <div class="white--text text-subtitle-1 font-weight-bold">
         {{ username }}
